@@ -5,7 +5,6 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-// Función para generar una carta aleatoria de póker
 function generarCartaAleatoria() {
   const palos = [
     { nombre: "Corazones", icono: "♥", color: "red" },
@@ -40,7 +39,6 @@ function generarCartaAleatoria() {
   };
 }
 
-// Función para mostrar la carta aleatoria en la página
 function mostrarCartaAleatoria() {
   const carta = generarCartaAleatoria();
   const cartaContainer = document.getElementById("carta-container");
@@ -53,8 +51,6 @@ function mostrarCartaAleatoria() {
   `;
 }
 
-// Mostrar la carta aleatoria inicialmente
 mostrarCartaAleatoria();
 
-// Actualizar la carta cada 10 segundos
 setInterval(mostrarCartaAleatoria, 10000);
